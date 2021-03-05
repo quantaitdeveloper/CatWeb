@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div >
+    <div class="container"> 
+        <div class="row" style="margin-bottom: 15px;" id="input">
+            <div class="col-md-3 col-sm-3 col-lg-2 col-6">
+                <p style="margin-top: 20px; color: rgb(159, 224, 28); font-size: 16px;">demo_5048<p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-3">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" style="background-color:white; color: black; border: none;margin-top: 14px;">
+                                <i class="fa fa-globe text-muted" aria-hidden="true"></i>
+                            </button>
+                    <div class="dropdown-menu text-muted" aria-labelledby="triggerId">
+                        <a class="dropdown-item " ><i class="fa fa-globe" aria-hidden="true"></i> Đổ cuộc gọi đến app và sipphone</a>
+                        <a class="dropdown-item "><i class="fa fa-phone-square" aria-hidden="true"></i> Đổ cuộc gọi đến số điện thoại</a>
+                        <a class="dropdown-item" ><i class="fa fa-mobile" aria-hidden="true"></i> Đổ cuộc gọi đến app</a>
+                        <a class="dropdown-item" ><i class="fas fa-phone-volume    "></i> Đổ cuộc gọi đến ipphone</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-3">
+                <img  id="hover" style=" margin-top: 32px; margin-left:20px ; margin-right:5px" src="https://static.stringee.com/web_phone/lastest/images/icon-minimize.svg">
+                <img id="hover"style=" margin-top:27px ;" src="https://static.stringee.com/web_phone/lastest/images/icon-close-no-border.svg" onclick="cancel()">
+                
+            </div>
+            
+            
+           
+        </div>
+        <div class="row" id="input" style="padding: 5px">
+            <div class="col-md-5 col-sm-5 col-lg-3 col-11 ">
+                <div class="form-group row">
+                  <label for=""></label>
+                  <input type="text" name="" id="result" class="form-control" placeholder="+84" aria-describedby="helpId" style="border: none; font-size: 24px;color:black;">
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-1 col-lg-1 col-1">
+                <p id="hover" style="margin-top: 6px; font-size: 25px;"><i class="fa fa-times-circle" style="margin-left: -10px; color: #CCCCCC" aria-hidden="true" onclick="result.value=''"></i></p>
+            </div>
+        </div><!--ENd row input-->
+        <!-- Row button-->
+      
+        <div class="row" id="row-number" style="text-align: center" >
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='1'">
+                <span id="number">1</span><br>
+                <p id="text"></p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='2'">
+                <span id="number">2</span><br>
+                
+                <p id="text">ABC</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='3'">
+                <span id="number">3</span><br>
+                
+                <p id="text">DEF</p>
+            </div>
+        </div>
+
+        <div class="row" id="row-number" style="text-align: center;">
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='4'">
+                <span id="number">4</span><br>
+                
+                <p id="text">GHI</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='5'">
+                <span id="number">5</span><br>
+                
+                <p id="text">JKL</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='6'">
+                <span id="number">6</span><br>
+                
+                <p id="text">MNO</p>
+            </div>
+        </div>
+
+        <div class="row" id="row-number" style="text-align: center;">
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='7'">
+                <span id="number">7</span><br>
+                
+                <p id="text">PQRS</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='8'">
+                <span id="number">8</span><br>
+                
+                <p id="text">TUV</p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='9'">
+                <span id="number">9</span><br>
+                
+                <p id="text">WXYZ</p>
+            </div>
+        </div>
+
+        <div class="row" id="row-number" style="text-align: center;">
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='*'">
+                <span id="number">*</span><br>
+                <p style="height: 15px;"></p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='0'">
+                <span id="number">0</span><br>
+                <p style="height: 15px;"></p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" id="btn" onclick="result.value+='#'">
+                <span id="number">#</span><br>
+                <p style="height: 15px;"></p>
+            </div>
+        </div>
+    </div>
+  <!--end container-->
+   
+
+
+    <div class="container footer">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-lg-12 col-12">
+                <span style="color:#cccc; font-size: 10px;"><b>Sử dụng số </b></span>
+            </div>
+            <div class="col-md-12 col-sm-12 col-lg-12 col-12">
+                <p style="height: 10px; margin-bottom: -5px;"></p>
+            </div>
+            
+        </div>
+        <div class="row" >
+            
+            <div class="col-md-4 col-sm-5 col-lg-2 col-12" id="hover" style=" background-color: #F2F7FE; ; border-radius: 8px; float: left; display: inline-flex; ">
+                <div style="margin: 10px;">
+                    <span id="" style="font-size: 14px; font-weight: 500;"><b>Not Available</b></span>
+                    <br>
+                    <span id="" style="font-size: 12px;font-family: Averta-Semibold;">Not Available</span>
+                    
+                </div>
+                               
+            </div>
+            <div class="col-md-2 col-sm-1 col-lg-1 col-12" id="hover" style="background-color: #F2F7FE; text-align: right;" >
+                <div style="margin-top: 20px;">
+                    <i class="fas fa-angle-down"></i>
+                    
+                </div>
+                               
+            </div>
+        </div>
+       
+        
+        <div class="row" >
+            
+            <div class="col-md-6 col-sm-6 col-lg-3 col-6 bg-light" >
+                <p></p>
+                
+                 </div>
+        </div>
+        <div class="row" >
+            
+            <div class="col-md-6 col-sm-6 col-lg-3 col-6 bg-light" >
+                <p></p>
+                 </div>
+        </div>
+        <div class="row" >
+            
+            <div class="col-md-6 col-sm-6 col-lg-3 col-6 bg-light" >
+                <p ></p>
+                 </div>
+        </div>
+        
+        <div class="row " >
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" style="text-align: center;">
+               <i id="hover" class="fa fa-list " aria-hidden="true" style="font-size: 25px; color: #cccc; "></i>
+            </div>
+            <div class="col-md-2 col-sm-2 col-lg-1 col-4" style="text-align: center; margin-top: -40px;">
+
+                <button style="background-color: #66D54B; width: 70px; height: 70px; border-radius: 40px; border-width: 0;"><i style="color: white" class="fas fa-phone"></i></button>
+             </div>
+             <div class="col-md-2 col-sm-2 col-lg-1 col-4" style="text-align: center; box-shadow: #cccc;">
+                <i id="hover" class="fa fa-user " aria-hidden="true" style="font-size: 25px;color: #cccc;"></i>
+             </div>
+        </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
