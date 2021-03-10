@@ -5,16 +5,29 @@
     padding: 0;
 }
 .header{
-    height: 1040px;
-
+    height: 657px;
+    background-color: #ECF0F0;
+    
 }
 .header-menu{
     background-color: #1c262b;
     text-align: center;
+    height: 100%;
     width: 100px;
-    height: 1000px; 
- 
-
+    float: left;
+    position: fixed;
+    transition: 0.7s;
+    z-index: 1;
+}
+.header-image{
+    /* width: calc(100% - 100px); */
+    width: 100%;
+    background-image: url("https://img2.thuthuat123.com/uploads/2019/11/19/anh-background-bau-troi-tren-day-nui-tuyet_122624429.jpg");
+    background-repeat: none;
+    background-size: cover;
+    visibility: visible;
+    float: left;
+    height: 678px; 
 }
 .col-lg-1{
     padding: 0;
@@ -44,7 +57,7 @@
     width: auto;
     height: 70px;
     line-height: 28px;
-    
+    list-style-type: none;
 }
 .menu li i{
     display: block;
@@ -52,7 +65,7 @@
     font-size: 16px;
    
 }
-i{
+.header-menu i{
     margin-left: -4px;
     margin-top: -15px;
 }
@@ -68,10 +81,10 @@ i{
 .menu li a:hover{
     color: #F8F5F8;
 }
-  .header-bottom{
+.header-bottom{
      margin-left: 10px;
   }
-  .social ul{
+.social ul{
       text-align: center;
   }
 .social li{
@@ -94,16 +107,11 @@ i{
     font-family: 'Roboto', sans-serif;
 }
 
-.header-image{
-    background-image: url("https://img2.thuthuat123.com/uploads/2019/11/19/anh-background-bau-troi-tren-day-nui-tuyet_122624429.jpg");
-    background-repeat: none;
-    background-size: cover;
-    visibility: visible;
-}
+
 .header-image-content{
     position: absolute;
-    top :40%;
-    left: 40%;
+    top :30%;
+    left: 35%;
     color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -128,6 +136,7 @@ i{
 
 .about{
     padding-top:15px;
+    background-color: #ECF0F0;
 }
 .about-content{
     max-width: 1040px;
@@ -149,9 +158,71 @@ i{
     position: relative;
     z-index: 10;
 }
-.about-icon, .about-content-h2{
-    margin-top: 2em;
+.show-menu-icon{
+    font-size: 50px;
+    color: #fff;  
+    position: fixed;
+    top:40%;
 }
+.hide-menu{
+    display :none;
+    margin :0;
+}
+.hide-menu label{
+    margin:0;
+  
+}
+.hide-menu-icon{
+
+    font-size: 30px;
+    color: #fff;
+    height: 40px;
+    
+   
+}
+.about-menu{
+    display: none;
+}
+@media screen and (max-width: 528px){
+   
+    .header-image-content{
+        top: 49%;
+        left:30%;
+    }
+} 
+@media screen and (max-width: 453px){
+   
+    .header-image-content{
+        top: 49%;
+        left:27%;
+    }
+} 
+@media screen and (max-width: 435px){
+    .header-menu{
+        left: -100px;
+        
+    }   
+    .show-menu-icon , .hide-menu-icon{
+        display: block;
+        padding: 18px;
+    }
+    .header-image-content{
+        top: 49%;
+        left:12%;
+
+    }
+    .show{
+        left:0;
+        display: block;
+        transition: 0.7s;
+    }
+    .hide{
+        display: none;
+    }
+    
+}
+
+
 .xx{
     position: absolute;
     left:50%;
@@ -246,6 +317,10 @@ i{
     font-weight: 600;
     font-family: "Montserrat", serif;
 }
+.col-lg-3{
+    max-width: 300px;
+    margin: 0 auto;
+}
 .section-title{
    
     position: relative;
@@ -274,7 +349,7 @@ i{
 .section-content {
     text-align: center;
     margin-top: 50px;
-    padding:20px;
+    padding-left:20px;
 }
 .title-1{
     font-family: "Montserrat";
@@ -288,11 +363,22 @@ i{
     font-family: "Roboto";
     font-weight: 200;
 }
-
+@media (max-width: 1025px){
+   .about-content{
+    max-width: 1040px;
+    margin: 0 75px;
+   }
+}
+@media (max-width: 375px){
+    .about-content{
+     max-width: 1040px;
+     margin: 0 auto;
+    }
+ }
 [class^="pe-7s-"], [class*=" pe-7s-"] {
     display: inline-block;
     font-family: 'Pe-icon-7-stroke';
-    speak: none;
+   
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -301,12 +387,35 @@ i{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.process p{
-    font-size: 70px;
+.process-content p{
+    font-size: 50px;
     text-align: center;
     color: #345;
-    margin: 0;
+    margin-left :4px;
+    margin-bottom: -8px;
 }
-.process h4{
+.process-content h4{
     text-align: center;
+    font-size: 14px;
+    margin-left:2px;
+}
+.process{
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+
+.process {
+    background-color: #fff;
+    margin-right: 77px;
+   
+}
+
+@media (min-width: 992px){
+
+ .col-lg-2 {
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 9%;
+ }
 }
