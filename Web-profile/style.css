@@ -4,15 +4,22 @@
     margin: 0;
     padding: 0;
 }
+.header{
+    height: 1040px;
 
-.col-lg-1{
-    padding: 0;
 }
 .header-menu{
     background-color: #1c262b;
     text-align: center;
-   
+    width: 100px;
+    height: 1000px; 
+ 
+
 }
+.col-lg-1{
+    padding: 0;
+}
+
 .menu{
     font-family: 'Montserrat', sans-serif;
     
@@ -34,6 +41,9 @@
 .menu li {  
     border-bottom: solid 1px #2A343A;
     letter-spacing: .07em;
+    width: auto;
+    height: 70px;
+    line-height: 28px;
     
 }
 .menu li i{
@@ -47,7 +57,7 @@ i{
     margin-top: -15px;
 }
 .menu li a{
-    color: #6F7C7E;
+    color: #748287;
     font-size: 10px;   
     text-transform: uppercase;
     text-decoration: none;
@@ -55,6 +65,9 @@ i{
     
  
   }
+.menu li a:hover{
+    color: #F8F5F8;
+}
   .header-bottom{
      margin-left: 10px;
   }
@@ -80,11 +93,12 @@ i{
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
 }
+
 .header-image{
     background-image: url("https://img2.thuthuat123.com/uploads/2019/11/19/anh-background-bau-troi-tren-day-nui-tuyet_122624429.jpg");
     background-repeat: none;
     background-size: cover;
-    position: relative;
+    visibility: visible;
 }
 .header-image-content{
     position: absolute;
@@ -97,35 +111,34 @@ i{
 .header-image-content h4{
     font-size: 18px;
 }
+.header-image-content a:hover{
+    text-decoration: none;
+
+}
 .header-image-content h2{
     font-size: 48px;
-    font-weight :900;
+    font-weight :500;
 }
-/*.writing{
-    animation: type 3s steps(9);
-    overflow: hidden;
-    white-space: nowrap;
+.header-image-content span{
+    display: block;
+    color: #fff;
+    font-family: "Montserrat";
+    
 }
-  
-  @keyframes type {
-    0%{
-         width: 0; 
-    }
-    100%{
-         width: 100%;
-     }
-}
-*/
+
 .about{
     padding-top:15px;
 }
-.about-content-h1{
+.about-content{
+    max-width: 1040px;
+    margin :0 auto;
+}
+.about-icon{
     text-align: center;
     padding-top:20px;
 }
-.about-content-h2{
-    margin: 0;
-   
+.about-content-h2 h2{
+    margin: 0;  
     text-transform: uppercase;
     position: relative;
     display: inline-block;
@@ -133,13 +146,17 @@ i{
     letter-spacing: 0.2em;
     white-space: nowrap;
     text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.about-icon, .about-content-h2{
+    margin-top: 2em;
 }
 .xx{
     position: absolute;
     left:50%;
 }
 .about-content-h2{
-    padding-top:40px;
     margin: 0;
     font-size: 11px;
     text-transform: uppercase;
@@ -148,29 +165,31 @@ i{
     font-weight: normal;
     letter-spacing: 0.2em;
     white-space: nowrap;
-    text-align: center;
-    line-height: 1.3;
+    text-align: center
 }
 .about-content-h2 h2::before{
     bottom: auto;
-    top: 1em;
-    left: 13.6em;
+    top: -.5em;
+    left: -1.57em;
     z-index: -1;
-    background-color: #7DB376;
+}
+.section-title h2:after, .section-title h2:before {
     content: " ";
     display: block;
     position: absolute;
-    bottom: -0.4em;
-    width: 1em;
-    height: 35%;
+    bottom: -.5em;
+    width: 2em;
+    height: 100%;
     background-color: #7DB376;
     pointer-events: none;
 }
 .about-content-h2 h2 i{
-    background-color: #8ACB82;
+    display: inline-block;
+    position: relative;
+    padding: .8em 3em;
+    font-style: normal;
     color: #fff;
-    font-family: "Roboto";
-    font-size: 11px;
+    background-color: #8ACB82;
 }
 .about-content-h2 h2 i ::before{
     bottom: auto;
@@ -268,4 +287,26 @@ i{
     font-size: 14px;
     font-family: "Roboto";
     font-weight: 200;
+}
+
+[class^="pe-7s-"], [class*=" pe-7s-"] {
+    display: inline-block;
+    font-family: 'Pe-icon-7-stroke';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.process p{
+    font-size: 70px;
+    text-align: center;
+    color: #345;
+    margin: 0;
+}
+.process h4{
+    text-align: center;
 }
