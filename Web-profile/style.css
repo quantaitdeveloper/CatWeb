@@ -27,7 +27,7 @@
     background-size: cover;
     visibility: visible;
     float: left;
-    height: 678px; 
+    height: 780px;
 }
 .col-lg-1{
     padding: 0;
@@ -110,8 +110,8 @@
 
 .header-image-content{
     position: absolute;
-    top :30%;
-    left: 35%;
+    top :25%;
+    left: 40%;
     color: #fff;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -181,19 +181,19 @@
    
 }
 .about-menu{
-    display: none;
+  left: -25%;
 }
 @media screen and (max-width: 528px){
    
     .header-image-content{
-        top: 49%;
+        top: 30%;
         left:30%;
     }
 } 
 @media screen and (max-width: 453px){
    
     .header-image-content{
-        top: 49%;
+        top: 30%;
         left:27%;
     }
 } 
@@ -207,7 +207,7 @@
         padding: 18px;
     }
     .header-image-content{
-        top: 49%;
+        top: 30%;
         left:12%;
 
     }
@@ -363,12 +363,24 @@
     font-family: "Roboto";
     font-weight: 200;
 }
-@media (max-width: 1025px){
+@media (min-width:1025px) and (max-width: 1500px){
+    .about-content{
+     max-width: 1040px;
+     margin: 0 auto;
+    }
+ }
+@media (min-width: 1025px){
    .about-content{
     max-width: 1040px;
-    margin: 0 75px;
+    margin: 0 auto;
    }
 }
+@media ( max-width: 726px){
+    .about-content{
+     max-width: 1040px;
+     margin: 0 50px;
+    }
+ }
 @media (max-width: 375px){
     .about-content{
      max-width: 1040px;
