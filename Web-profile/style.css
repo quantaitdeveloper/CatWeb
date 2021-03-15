@@ -1240,4 +1240,11 @@ a {
     text-align: justify;
 }
 
-  
+@media screen and (max-width :375px){
+    .fun-factt h4{
+        font-size: 1.0em;
+    }
+    .contact-form{
+        padding-left: 30px;
+    }
+}
