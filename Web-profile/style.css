@@ -141,8 +141,7 @@ html {
 .about, .resume,.portfolio,.blog{
     padding-top:20px;
     background-color: #ECF0F0;
-    padding-bottom: 20px;
-
+    padding-bottom: 50px;
 }
 .about-content,.resume-content,.portfolio-content,.blog-content,.contact-content{
     max-width: 1040px;
@@ -721,7 +720,7 @@ h2 {
   color: white;
   background-color: #8ACB82;
   border-color: #8ACB82;
-  letter-spacing: 2px;
+
 }
 /*---------------------------------------------------------------*/
 
