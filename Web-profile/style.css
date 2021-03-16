@@ -1122,6 +1122,17 @@ a {
     color: #fff;
     background-color: #34534A;
     border-radius: 50%;
+   
+}
+.sociall li:hover{
+    background-color :brown;
+    color: #fff;
+}
+.sociall li i{
+    font-size: 20px;
+    position: relative;
+    top : 2px;
+    left :3px;
 }
 .sociall li  a {
    
@@ -1204,7 +1215,7 @@ a {
         width: 150px;
 }
 .form-group input{
-    width: 150px;
+    width: 250px;
     float: left;
 }
 
