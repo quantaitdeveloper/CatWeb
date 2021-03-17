@@ -97,6 +97,9 @@ html {
     padding-right: 4px;
     
 }
+.social li :hover{
+    color: #fff;
+}
 .social li a{
     color: #556269;
     text-align: center;
